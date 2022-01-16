@@ -31,3 +31,5 @@ jobs:
         run: ./gradlew build
       - name: Test with Gradle
         run: ./gradlew test
+      - name: Unit test
+        run: app/src/androidTest/java/com/example/avjindersinghsekhon/minimaltodo
