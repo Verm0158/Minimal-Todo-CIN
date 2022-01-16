@@ -29,5 +29,5 @@ jobs:
         run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew build
-      - name: Run unit test
-        run: app/src/androidTest/java/com/example/avjindersinghsekhon/minimaltodo/ApplicationTest.java
+      - name: Test with Gradle
+        run: ./gradlew test
