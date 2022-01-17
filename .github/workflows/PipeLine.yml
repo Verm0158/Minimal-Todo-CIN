@@ -33,4 +33,4 @@ jobs:
       - name: Unit tests
         run: bash ./gradlew test --stacktrace
       - name: Unit tests results
-        run: run ./app/src/androidTest/java/com/example/avjindersinghsekhon/minimaltodo/ApplicationTest.java
+        run: ./app/src/androidTest/java/com/example/avjindersinghsekhon/minimaltodo/ApplicationTest.java
