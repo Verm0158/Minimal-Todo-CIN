@@ -33,7 +33,4 @@ jobs:
       - name: Unit tests
         run: bash ./gradlew test --stacktrace
       - name: Unit tests results
-        uses: actions/upload-artifact@v1
-        with:
-          name: unit-tests-results
-          path: ./app/src/androidTest/java/com/example/avjindersinghsekhon/minimaltodo/ApplicationTest.java
+        run: run ./app/src/androidTest/java/com/example/avjindersinghsekhon/minimaltodo/ApplicationTest.java
