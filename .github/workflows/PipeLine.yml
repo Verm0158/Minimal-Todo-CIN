@@ -34,3 +34,6 @@ jobs:
         run: bash ./gradlew test --stacktrace
       - name: Unit tests results
         run: chmod +x ./app/src/androidTest/java/com/example/avjindersinghsekhon/minimaltodo/ApplicationTest.java
+      - name: Android Test Report
+        uses: asadmansr/android-test-report-action@v1.2.0
+        if: ${{ always() }} # IMPORTANT: run Android Test Report regardless
